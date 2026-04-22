@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+<main>
+    <h1>Welcome to the menu</h1>
+    <div class="menu-grid">
+        <% menu.foreach(item => { %>
+        <div class="menu-card">
+            <img class="menu-image" src="<%= item.image_url %>"  alt="<%= item.title %>">
+            <h2><%= item.title %></h2>
+            <a href="/menus/<%= item.id %>" class="btn">INFO</a>
+        </div>
+        <% }) %>
+    </div>
+</main>
+<%- include('partials/footer') %>
