@@ -1,5 +1,29 @@
 [
     {
-        "title"
+        "id": "Chicken And Rice",
+        "title": "Chicken And Rice",
+        "price": "1000kr",
+        "description": "A very tasty Chicken And Rice",
+        "vegan": "NO",
+        "image_url": "https://th.bing.com/th/id/OIP.Bphg4Otlkii6-iIW73vjNQHaJQ?w=184&h=230&c=7&r=0&o=7&pid=1.7&rm=3"
+
+    },
+    {
+        "id": "Pasta",
+        "title": "Pasta",
+        "price": "1000kr",
+        "description": "A very tasty italian Pasta",
+        "vegan": "YES",
+        "image_url": "https://th.bing.com/th/id/OIP.Bphg4Otlkii6-iIW73vjNQHaJQ?w=184&h=230&c=7&r=0&o=7&pid=1.7&rm=3"
+
+    },
+    {
+        "id": "Chicken Wings",
+        "title": "Chicken Wings",
+        "price": "1000kr",
+        "description": "very tasty Chicken Wings",
+        "vegan": "NO",
+        "image_url": "https://th.bing.com/th/id/OIP.Bphg4Otlkii6-iIW73vjNQHaJQ?w=184&h=230&c=7&r=0&o=7&pid=1.7&rm=3"
+
     }
 ]

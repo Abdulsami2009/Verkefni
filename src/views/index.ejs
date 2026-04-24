@@ -2,11 +2,11 @@
 <main>
     <h1>Welcome to the menu</h1>
     <div class="menu-grid">
-        <% menu.foreach(item => { %>
+        <% menus.forEach(menu => { %>
         <div class="menu-card">
-            <img class="menu-image" src="<%= item.image_url %>"  alt="<%= item.title %>">
-            <h2><%= item.title %></h2>
-            <a href="/menus/<%= item.id %>" class="btn">INFO</a>
+            <img class="menu-image" src="<%= menu.image_url %>"  alt="<%= menu.title %>">
+            <h2><%= menu.title %></h2>
+            <a href="/menu/<%= menu.id %>" class="btn">INFO</a>
         </div>
         <% }) %>
     </div>

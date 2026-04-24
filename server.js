@@ -1,9 +1,7 @@
-require('dotenv').config();
 const express = require ('express');
 const path = require('path');
 
 const menusRouter = require('./src/routes/menus_routes');
-const { title } = require('process');
 
 const app = express();
 const PORT = 3000;
@@ -16,14 +14,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', menusRouter);
 
-app.use((req, res, next) => {
-    res.status(404).render('404', { title: '404 - Page Not Found' })
-});
+
 
 
 app.use((err, req, res, next) => {
     console.error(err.stack);
-    res.render(500)
+    res.render(500).send('Internel Server Error')
 });
 
 app.listen(PORT, () => {

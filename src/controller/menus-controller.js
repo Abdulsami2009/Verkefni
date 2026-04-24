@@ -1,29 +1,29 @@
-const menuService = require('../lib/menuService');
+const menuService = require('../lib/menu-service');
 
-async function index(req, res) {
-    const menus = await menuService.getAllMenus();
-    res.render('index', { title: 'Menu', menus });
-}
+const index = (req, res) => {
+    const menus = menuService.getAllMenus();
+    res.render('index', { title: 'menu', menus });
+};
 
-async function detail(req, res) {
-    const id = req.params.id;
-    const menu = await menuService.getMenuById(id);
+const details = (req, res) => {
+    const { id }= req.params;
+    const menu = menuService.getMenuById(id);
     
-    console.log('Waiting for id;', id);
     if (!menu) {
-        return res.render('404', { title: 'Menu not Found'});
+        return res.status(404).render ('404', { title: 'Menu not Found'});
     }
 
 
-    res.render('menu-detail', { title: 'menu.title', menu  });
+    res.render('details', { title: 'menu.title', menu  });
+};
 
-    const info = (req, res) => {
-        res.render('Info', { title: 'Info'});
-    };
+const info = (req, res) => {
+    res.render('info', { title: 'Info'});
+};
 
     module.exports = {
         index,
-        detail,
+        details,
         info
-    }
-}
+    };
+
