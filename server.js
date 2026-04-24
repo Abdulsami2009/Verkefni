@@ -1,16 +1,29 @@
+require('dotenv').config();
 const express = require ('express');
 const path = require('path');
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+const menusRouter = require('./src/routes/menus_routes');
+const { title } = require('process');
 
+const app = express();
+const PORT = 3000;
+
+app.set('views', path.join(__dirname, 'src', 'views'));
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/Menu', (req, res) => {
-    res.render('menu', { title: 'Menu' });
+
+app.use('/', menusRouter);
+
+app.use((req, res, next) => {
+    res.status(404).render('404', { title: '404 - Page Not Found' })
+});
+
+
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.render(500)
 });
 
 app.listen(PORT, () => {
