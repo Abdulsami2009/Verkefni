@@ -1,11 +1,11 @@
-<% - include('partials/header') %>
+<%- include('partials/header') %>
 <main>
-    <div class="item-details">
+    <div class="details">
         <h1><%= menu.title %></h1>
-        <img class="menu-image" src="<%= menu.image_url %>"  alt="<%= menu.title %>">
-        <p><%= menu.description %></p>
-        <p><%= menu.price %></p>
-        <p><%= menu.vegan %></p>
+        <img class="detail-image" src="<%= menu.image_url %>"  alt="<%= menu.title %>">
+        <p> Description: <%= menu.description %></p>
+        <p> Price: <%= menu.price %></p>
+        <p> Vegan: <%= menu.vegan %></p>
         <a href="/" class="btn">Back To The Menu</a>
     </div>
 </main>

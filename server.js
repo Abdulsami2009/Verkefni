@@ -6,15 +6,13 @@ const menusRouter = require('./src/routes/menus_routes');
 const app = express();
 const PORT = 3000;
 
-app.set('views', path.join(__dirname, 'src', 'views'));
+app.set('views', path.join(__dirname, 'src/views'));
 app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', menusRouter);
-
-
 
 
 app.use((err, req, res, next) => {

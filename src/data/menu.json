@@ -5,7 +5,7 @@
         "price": "1000kr",
         "description": "A very tasty Chicken And Rice",
         "vegan": "NO",
-        "image_url": "https://th.bing.com/th/id/OIP.Bphg4Otlkii6-iIW73vjNQHaJQ?w=184&h=230&c=7&r=0&o=7&pid=1.7&rm=3"
+        "image_url": "/img/chicken_and_rice.webp"
 
     },
     {
@@ -14,7 +14,7 @@
         "price": "1000kr",
         "description": "A very tasty italian Pasta",
         "vegan": "YES",
-        "image_url": "https://th.bing.com/th/id/OIP.Bphg4Otlkii6-iIW73vjNQHaJQ?w=184&h=230&c=7&r=0&o=7&pid=1.7&rm=3"
+        "image_url": "/img/pasta.webp"
 
     },
     {
@@ -23,7 +23,58 @@
         "price": "1000kr",
         "description": "very tasty Chicken Wings",
         "vegan": "NO",
-        "image_url": "https://th.bing.com/th/id/OIP.Bphg4Otlkii6-iIW73vjNQHaJQ?w=184&h=230&c=7&r=0&o=7&pid=1.7&rm=3"
+        "image_url": "/img/wings.webp"
+
+    },
+
+    {
+        "id": "Fish And Chips",
+        "title": "Fish And Chips",
+        "price": "1000kr",
+        "description": "very tasty Fish And Cips",
+        "vegan": "NO",
+        "image_url": "/img/fish_and_chips.webp"
+
+    },
+
+    {
+        "id": "Chicken Nuggets",
+        "title": "Chicken Nuggets",
+        "price": "1000kr",
+        "description": "very tasty Chicken Nuggets",
+        "vegan": "NO",
+        "image_url": "/img/chicken_nuggets.webp"
+
+    },
+
+      {
+        "id": "Meatballs",
+        "title": "Meatballs",
+        "price": "1000kr",
+        "description": "very tasty Meatballs",
+        "vegan": "NO",
+        "image_url": "/img/meatballs.webp"
+
+    },
+
+    {
+        "id": "Hotdogs",
+        "title": "Hotdogs",
+        "price": "1000kr",
+        "description": "very tasty Hotdog",
+        "vegan": "NO",
+        "image_url": "/img/hotdog.webp"
+
+    },
+
+    {
+        "id": "Mac And Chesse",
+        "title": "Mac And Cheese",
+        "price": "1000kr",
+        "description": "very tasty Mac And Cheese",
+        "vegan": "NO",
+        "image_url": "/img/mac_and_cheese.webp"
 
     }
+    
 ]
